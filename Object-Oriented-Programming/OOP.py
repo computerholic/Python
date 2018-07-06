@@ -2,19 +2,25 @@ print("========== God ========= \n\n")
 
 class Employee:
 	
+	num_of_emp = 0
 	raise_amount = 1.04
+	
 	
 	def __init__(self, first, last, pay):  #Constuction. #  Init method - Initialize. #Self is an instance.
 		self.first = first
 		self.last = last
 		self.pay = pay
 		self.email = first + '.' + last + '@company.com'
+		
+		Employee.num_of_emp += 1  # It's nice to know how many employees we have.
 	
 	def fullname(self):
 		return '{} {}'.format(self.first, self.last)
 		
 	def apply_raise(self):
 		self.pay = int(self.pay) * Employee.raise_amount  # 4 percent increasing rate.
+
+	
 
 # %% 
 print("PART_0: \n")
@@ -42,12 +48,16 @@ print(emp_1.pay)
 # %%
 print("\n")
 
-print(Employee.raise_amount)
-print(emp_1.raise_amount)
-print(emp_2.raise_amount)
+print('emp_1.__dict__:',emp_1.__dict__)  # It gives us all of the attributes about emp_1.
 
-# %%
-print(emp_1.__dict__)  # It gives us all of the attributes about emp_1.
+emp_1.raise_amount = 1.05
+
+print('\nEmployee.raise_amount: ',Employee.raise_amount,'\n')
+
+print('emp_1.raise_amount:',emp_1.raise_amount)
+print('emp_2.raise_amount:',emp_2.raise_amount)
+
+print('\n Employee.num_of_emps',Employee.num_of_emp)
 
 # %%
 
