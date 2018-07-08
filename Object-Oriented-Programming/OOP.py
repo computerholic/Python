@@ -4,8 +4,8 @@ class Employee:
 	
 	num_of_emp = 0
 	raise_amount = 1.04
-	
-	
+
+
 	def __init__(self, first, last, pay):  #Constuction. #  Init method - Initialize. #Self is an instance.
 		self.first = first
 		self.last = last
@@ -13,14 +13,12 @@ class Employee:
 		self.email = first + '.' + last + '@company.com'
 		
 		Employee.num_of_emp += 1  # It's nice to know how many employees we have.
-	
+
 	def fullname(self):
 		return '{} {}'.format(self.first, self.last)
-		
+	
 	def apply_raise(self):
 		self.pay = int(self.pay) * Employee.raise_amount  # 4 percent increasing rate.
-
-	
 
 # %% 
 print("PART_0: \n")
@@ -57,9 +55,9 @@ print('\nEmployee.raise_amount: ',Employee.raise_amount,'\n')
 print('emp_1.raise_amount:',emp_1.raise_amount)
 print('emp_2.raise_amount:',emp_2.raise_amount)
 
-print('\n Employee.num_of_emps',Employee.num_of_emp)
+print('\nEmployee.num_of_emps',Employee.num_of_emp)
 
-# %%
+# %% Begining of Statistics and 
 
 # %%
 
