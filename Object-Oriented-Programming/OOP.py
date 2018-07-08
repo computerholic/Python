@@ -57,9 +57,23 @@ print('emp_2.raise_amount:',emp_2.raise_amount)
 
 print('\nEmployee.num_of_emps',Employee.num_of_emp)
 
-# %% Begining of Statistics and 
 
-# %%
+# %% Begining of Staticmethods and classmethods. _Tutorial 3.
+# Differences between class methods and regular methods.
+# A lot of people get confused about it. 
+
+# Regular method automaticaly takes the instance as the argument.
+# How to convert regular method to class method.
+
+
+
+# %% working with classes
+
+emp_str_1 = 'John-Doe-70000'
+emp_str_2 = 'Steve-Smith-30000'
+emp_str_3 = 'Jane-Doe-90000'
+
+first, last, pay = emp_str_1.split('-')
 
 # %%
 
