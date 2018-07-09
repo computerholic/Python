@@ -14,7 +14,7 @@ class Person:
 		self.name = name  # This is an instance variable.
 		self.birth = datetime.now()
 
-		print(str(name)+' is created on '+ str(self.birth),'.')
+		print('\n'+name+' is created on '+ str(self.birth),'.\n')
 		Person.thisCount += 1
 		
 	def thisFunctionName(self, name):
@@ -23,29 +23,36 @@ class Person:
 if __name__ == '__main__':  # Module besurate dasti ejra shode.
 	
 	Mahdi = Person('Mahdi')
-	print('Person.count: ',Person.thisCount)
-	print('Mahdi.name',Mahdi.name)
+	print('Mahdi.birth:', Mahdi.birth)
 	
-	Mahdi.phone = '7063868110'  # Add an attribute to Mahdi! Now if you dir(Ali)
+	print()
+	
+# 	gettattr
+	print("getattr(Mahdi, 'name': )", getattr(Mahdi, 'name'))
+	print()
+	
+# 	setattr
+	print("setattr(Mahdi, 'phone', '7063868110')", setattr(Mahdi, 'phone', '7063868110'))
+	print()
 	print(dir(Mahdi))
 	
-	del Mahdi.phone  # Remove Mahdi's attribute.
-	print(dir(Mahdi))
+# 	hasattr
+	print("", )
+	print("hasatt(Mahdi, 'phone')? ", hasattr(Mahdi,'phone'))
 	
-	Maryam = Person('Maryam')
-	print('Person.count: ',Person.thisCount)
-	print('Maryam.name: ',Maryam.name)
+# 	delattr
+	print("delattr(Mahdi,'phone'): ",delattr(Mahdi,'phone'))
+	print("hasatt(Mahdi, 'phone')? ", hasattr(Mahdi,'phone'))
 	
-	
+# -------------------- 4 function that help us to manage the Class.
 
+# getattr()  # get attribution.
+# setattr()  # 
 
-# -------------------- Naming the Class variables.
+# -------------------- Naming the classVariables. ----------------------
 
 # Copy funtions.
 # the first word small. the rest are big.
-# --------------------- Class Variable ---------------------------------
-# Moteghayeri ke makhsuse Class e ! va azun olgue sakhte mishe.
-
 
 # ----------------------- Attributes -----------------------------------
 # print(dir(obj))  # We can see which attributes it have. 
