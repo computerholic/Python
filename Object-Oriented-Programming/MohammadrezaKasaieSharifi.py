@@ -1,12 +1,16 @@
-# Private ? Public ? and hidden sazi chetoriast?
+# N
+# Object Oriented Tuturial - 9.
+# https://www.youtube.com/watch?v=bbAnW5Hncgg
+# ----------------------------------------------------------------------
 
 from datetime import datetime
 from functools import total_ordering  # age esmesho ghable esme class benevisam va @ pass bedam in ye decoratore! yani age yekio neveshti baghiaro ham miare.
 
-@total_ordering
+
 class Test:
 	test = 'Some string just to show that Class Test is working.'
 
+@total_ordering
 class Person:
 	''' __doc__
 	author: Mahdi.
@@ -56,14 +60,3 @@ if __name__ == '__main__':
 	print(Mahdi.age < Maryam.age)
 
 	print()
-
-# New Functions
-
-# __gt__  >
-# __lt__  <
-# __eq__  ==
-# __ne__  !=
-# __ge__  >=
-# __le__  <=
-
-# 
