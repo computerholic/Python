@@ -4,6 +4,8 @@
 from datetime import datetime
 
 class Test:
+	test = 'Some string just to show that Class Test is working.'
+	
 	
 class Person:
 	''' __doc__
@@ -25,7 +27,7 @@ class Person:
 	def __del__(self):
 		print(self.name,' destroyed')
 		
-class ItMan(Person):  # In az ki bayad ers bari kone ? Az Person! # Hamamun esm darimo. Tarikh tavalod darimo ...
+class ItMan(Person, Test):  # In az ki bayad ers bari kone ? Az Person! # Hamamun esm darimo. Tarikh tavalod darimo ...
 	
 	def __init__(self, name, email):
 		self.name = name
@@ -41,6 +43,11 @@ if __name__ == '__main__':
 	
 	print('jadi.name:', jadi.name)
 	print('jadi.email:',jadi.email)
+	print('jadi.test:',jadi.test)
+	print(Test.__bases__)  # in neshoon mide in class az kodum kelasa dare ers bari mikone. # Inheritance.
+
+
+
 
 #	print('jadi.birth:', jadi.birth)
 	
