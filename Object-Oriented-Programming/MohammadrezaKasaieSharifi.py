@@ -9,18 +9,32 @@ class Person:
 	author: Mahdi.
 	email: mahdi@uga.edu.
 	'''
-
-	# Different methods have different names due to their responsibilities. One of them is constructor which we make an object that method happens!
-	def __init__(self, name):  # Initialize.  # This is the constructor method. and as usual we should pass it the self.
+	count = 0;  # This is constant in all of the objects.
+	
+	def __init__(self, name):  
 		self.name = name
 		self.birth = datetime.now()
-		print('Human is created on',str(self.birth))
+		
+		print(str(name)+' is created on '+ str(self.birth),'.')
+		Person.count += 1 # count = count + 1 ==> Error. Age mikhay az moteghayeri too class estefade koni 
 
 	def thisFunctionName(self, name):
 		print(name)  # Har tabe besoorate pishfarz None ro bar migardoone.
 
 if __name__ == '__main__':  # Module besurate dasti ejra shode.
-	obj1 = Person('Mahdi')  # Making an instance from an object.
+	obj1 = Person('Mahdi')
+	print('Person.count: ',Person.count)
+	obj2 = Person('Maryam')
+	print('Person.count: ',Person.count)
+	
+
+
+# Mahdi 2018-07-09 00:23:33.350050
+# Maryam 2018-07-09 00:23:33.350155
+        
+# --------------------- Class Variable ---------------------------------
+# Moteghayeri ke makhsuse Class e ! va azun olgue sakhte mishe.
+
 
 # ----------------------- Attributes -----------------------------------
 # print(dir(obj))  # We can see which attributes it have. 
@@ -29,3 +43,5 @@ if __name__ == '__main__':  # Module besurate dasti ejra shode.
 # obj.name = 'Ali'
 # dir(obj)
 # So I can add attribute to it.
+
+
