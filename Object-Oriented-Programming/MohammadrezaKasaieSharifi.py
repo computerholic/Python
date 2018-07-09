@@ -1,9 +1,5 @@
-# Soal? Which __init__ ejra mishe?
-# Overwrite kardan ya sarbar gozari?
-# ----------------------------------------------------------------------
+# Private ? Public ? and hidden sazi chetoriast?
 
-# Aval mibine Class __init__ dare ya na! Age dasht uno enjra mikone. Age nadasht mire
-# unyekio negah mikone.
 from datetime import datetime
 
 class Test:
@@ -14,7 +10,7 @@ class Person:
 	author: Mahdi.
 	email: mahdi@uga.edu.
 	'''
-	thisCount = 0;
+	__thisCount = 0;
 
 	def __init__(self, name):  
 		self.name = name
@@ -22,7 +18,7 @@ class Person:
 		print('He was a Person.')
 
 		print('\n'+name+' is created on '+ str(self.birth),'.\n')
-		Person.thisCount += 1
+		Person.__thisCount += 1
 		
 	def thisFunctionName(self, name):
 		print(name, 'Called from class of Person.')
@@ -49,9 +45,5 @@ if __name__ == '__main__':
 	
 	print("issubclass(ItMan, Person):?" ,issubclass(ItMan, Person) )
 	print("isinstance(Mahdi, Person):?" ,isinstance(Mahdi, Person) )
-	print()
-
-#	print('jadi.birth:', jadi.birth)
-	
-#  To python mige harchandta mikhay Class dashte bash. Object mitune az chandta ers bebare!
-#  Bazi zabana ye Class bozorg tush darim bad umade tike tikash karde. :-)
+	print("Person.__count:",Person.__thisCount)
+	print("----------------------------------------------------------")
