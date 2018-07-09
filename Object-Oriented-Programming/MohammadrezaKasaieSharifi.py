@@ -4,7 +4,7 @@
 from datetime import datetime
 
 class Person:
-	'''
+	''' __doc__
 	author: Mahdi.
 	email: mahdi@uga.edu.
 	'''
@@ -25,41 +25,21 @@ if __name__ == '__main__':  # Module besurate dasti ejra shode.
 	Mahdi = Person('Mahdi')
 	print('Mahdi.birth:', Mahdi.birth)
 	
-	print()
+#	2 Attribute ee ke har object dare:
+
+#	__doc__
+#   In hamun tozihate dakhele __doc__ hast.
+
+#   obj.__module__
+#	__main__
+
+	print('Mahdi.__module__:', Mahdi.__module__,'\n')
 	
-# 	gettattr
-	print("getattr(Mahdi, 'name': )", getattr(Mahdi, 'name'))
-	print()
+	print('Mahdi.__dict__:', Mahdi.__dict__,'\n')
+
+# __name__ ru kelas tarif mishe na object.
+	print("Person.__name__:",Person.__name__)
 	
-# 	setattr
-	print("setattr(Mahdi, 'phone', '7063868110')", setattr(Mahdi, 'phone', '7063868110'))
-	print()
-	print(dir(Mahdi))
+# __bases__
+	print("Person.__bases__:", Person.__bases__)
 	
-# 	hasattr
-	print("", )
-	print("hasatt(Mahdi, 'phone')? ", hasattr(Mahdi,'phone'))
-	
-# 	delattr
-	print("delattr(Mahdi,'phone'): ",delattr(Mahdi,'phone'))
-	print("hasatt(Mahdi, 'phone')? ", hasattr(Mahdi,'phone'))
-	
-# -------------------- 4 function that help us to manage the Class.
-
-# getattr()  # get attribution.
-# setattr()  # 
-
-# -------------------- Naming the classVariables. ----------------------
-
-# Copy funtions.
-# the first word small. the rest are big.
-
-# ----------------------- Attributes -----------------------------------
-# print(dir(obj))  # We can see which attributes it have. 
-
-# How can I add attribute to a Class?
-# obj.name = 'Ali'
-# dir(obj)
-# So I can add attribute to it.
-
-
