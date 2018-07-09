@@ -44,14 +44,12 @@ class ItMan(Person, Test):  # In az ki bayad ers bari kone ? Az Person! # Hamamu
 
 if __name__ == '__main__':
 	
-	jadi = ItMan('Jadi', 'jadijadi@gmail.com')
-	
-	print('jadi.name:', jadi.name)
-	print('jadi.email:',jadi.email)
-	print('jadi.test:',jadi.test)
-	print(Test.__bases__)  # in neshoon mide in class az kodum kelasa dare ers bari mikone. # Inheritance.
-	
+	jadi = ItMan('Jadi', 'jadijadi@gmail.com')	
 	Mahdi = Person('Mahdi')
+	
+	print("issubclass(ItMan, Person):?" ,issubclass(ItMan, Person) )
+	print("isinstance(Mahdi, Person):?" ,isinstance(Mahdi, Person) )
+	print()
 
 #	print('jadi.birth:', jadi.birth)
 	
