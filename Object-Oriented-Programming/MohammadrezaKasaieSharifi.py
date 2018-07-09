@@ -28,25 +28,25 @@ if __name__ == '__main__':  # Module besurate dasti ejra shode.
 	Mahdi = Person('Mahdi')
 	print('Mahdi.birth:', Mahdi.birth)
 	
-#	2 Attribute ee ke har object dare:
+##	2 Attribute ee ke har object dare:
 
-#	__doc__
-#   In hamun tozihate dakhele __doc__ hast.
+##	__doc__
+##   In hamun tozihate dakhele __doc__ hast.
 
-#   obj.__module__
-#	__main__
+##   obj.__module__
+##	__main__
 
-	print('Mahdi.__module__:', Mahdi.__module__,'\n')
+#	print('Mahdi.__module__:', Mahdi.__module__,'\n')
 	
-	print('Mahdi.__dict__:', Mahdi.__dict__,'\n')
+#	print('Mahdi.__dict__:', Mahdi.__dict__,'\n')
 
-# __name__ ru kelas tarif mishe na object.
-	print("Person.__name__:",Person.__name__)
+## __name__ ru kelas tarif mishe na object.
+#	print("Person.__name__:",Person.__name__)
 	
-# __bases__
-	print("Person.__bases__:", Person.__bases__)
+## __bases__
+#	print("Person.__bases__:", Person.__bases__)
 	
-# __ Garbage Collection ==> Happening by python. --> we can define a method name Distructor. It can show you a message when the object is removing.
+## __ Garbage Collection ==> Happening by python. --> we can define a method name Distructor. It can show you a message when the object is removing.
 
 # a = 1
 # b = a
