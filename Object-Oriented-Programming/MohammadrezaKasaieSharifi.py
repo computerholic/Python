@@ -43,3 +43,13 @@ if __name__ == '__main__':  # Module besurate dasti ejra shode.
 # __bases__
 	print("Person.__bases__:", Person.__bases__)
 	
+# __ Garbage Collection ==> Happening by python. --> we can define a method name Distructor. It can show you a message when the object is removing.
+
+# a = 1
+# b = a
+# id(a)
+# id(b)  # Same as a. Now we have two different variables which are pointing to the same amount.
+# del(a)
+# We do not have the arrow from a to 1 any more.
+# If I say del(b) there is no a and b.
+# Now python will figure out that we have an object with no use! 
