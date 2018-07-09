@@ -13,9 +13,10 @@ class Test:
 @total_ordering
 class Person:
 	''' __doc__
-	author: Mahdi.
+    author: Mahdi.
 	email: mahdi@uga.edu.
 	'''
+
 	__thisCount = 0;
 
 	def __init__(self, name, age):  

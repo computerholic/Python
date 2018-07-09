@@ -20,16 +20,6 @@ class Employee:
 	def apply_raise(self):
 		self.pay = int(self.pay) * Employee.raise_amount  # 4 percent increasing rate.
 
-
-
-# %% Tutorial 3 : Staticmethods and classmethods.
-# Differences between class methods and regular methods.
-# A lot of people get confused about it. 
-
-# Regular method automaticaly takes the instance as the argument(self)
-# How to convert regular method to class method.
-
-
 	@classmethod  # Decorator makes the regularmethod to classmethod.
 	def set_raise_amt(cls, amount):  # Passing a class as an argument. # we are working with the class instead of the instance.
 		class.raise_amount = amount
