@@ -19,6 +19,9 @@ class Person:
 		
 	def thisFunctionName(self, name):
 		print(name)
+		
+	def __del__(self):
+		print(self.name,' destroyed')
 
 if __name__ == '__main__':  # Module besurate dasti ejra shode.
 	
@@ -52,4 +55,4 @@ if __name__ == '__main__':  # Module besurate dasti ejra shode.
 # del(a)
 # We do not have the arrow from a to 1 any more.
 # If I say del(b) there is no a and b.
-# Now python will figure out that we have an object with no use! 
+# Now python will figure out that we have an object with no use!
