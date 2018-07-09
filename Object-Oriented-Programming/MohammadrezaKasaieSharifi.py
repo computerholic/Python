@@ -1,31 +1,42 @@
 # Karbordhaye method constructor?
 # -------------------------------
 
-from datetime import datetime  # Ino man import mikonam ta betoonam ba object datetime kar konam.
-# Onject zaman ro mikham azash estefade konam.
+from datetime import datetime
 
 class Person:
 	'''
 	author: Mahdi.
 	email: mahdi@uga.edu.
 	'''
-	thisCount = 0;  # This is constant in all of the objects.
+	thisCount = 0;  # This is a Class variable.
 
 	def __init__(self, name):  
-		self.name = name
+		self.name = name  # This is an instance variable.
 		self.birth = datetime.now()
 
 		print(str(name)+' is created on '+ str(self.birth),'.')
-		Person.thisCount += 1 # count = count + 1 ==> Error. Age mikhay az moteghayeri too class estefade koni 
-
+		Person.thisCount += 1
+		
 	def thisFunctionName(self, name):
-		print(name)  # Har tabe besoorate pishfarz None ro bar migardoone.
+		print(name)
 
 if __name__ == '__main__':  # Module besurate dasti ejra shode.
-	obj1 = Person('Mahdi')
+	
+	Mahdi = Person('Mahdi')
 	print('Person.count: ',Person.thisCount)
-	obj2 = Person('Maryam')
+	print('Mahdi.name',Mahdi.name)
+	
+	Mahdi.phone = '7063868110'  # Add an attribute to Mahdi! Now if you dir(Ali)
+	print(dir(Mahdi))
+	
+	del Mahdi.phone  # Remove Mahdi's attribute.
+	print(dir(Mahdi))
+	
+	Maryam = Person('Maryam')
 	print('Person.count: ',Person.thisCount)
+	print('Maryam.name: ',Maryam.name)
+	
+	
 
 
 # -------------------- Naming the Class variables.
