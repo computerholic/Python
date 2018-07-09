@@ -45,5 +45,5 @@ if __name__ == '__main__':
 	
 	print("issubclass(ItMan, Person):?" ,issubclass(ItMan, Person) )
 	print("isinstance(Mahdi, Person):?" ,isinstance(Mahdi, Person) )
-	print("Person.__count:",Person.__thisCount)
+	print("Person.__count:",Mahdi._Person__thisCount)  # Inam az data hiding! ghablesh bayad __ bezarami! :-) Kheili mohem.
 	print("----------------------------------------------------------")
