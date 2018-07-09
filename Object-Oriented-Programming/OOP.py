@@ -20,8 +20,19 @@ class Employee:
 	def apply_raise(self):
 		self.pay = int(self.pay) * Employee.raise_amount  # 4 percent increasing rate.
 
-# %% 
-print("PART_0: \n")
+
+
+# %% Tutorial 3 : Staticmethods and classmethods.
+# Differences between class methods and regular methods.
+# A lot of people get confused about it. 
+
+# Regular method automaticaly takes the instance as the argument(self)
+# How to convert regular method to class method.
+
+
+	@classmethod  # Decorator makes the regularmethod to classmethod.
+	def set_raise_amt(cls, amount):  # Passing a class as an argument. # we are working with the class instead of the instance.
+		class.raise_amount = amount
 
 emp_1 = Employee('Mahdi','Kashani','80000')
 emp_2 = Employee('Maria Clare','Nunley','90000')
@@ -29,41 +40,11 @@ emp_2 = Employee('Maria Clare','Nunley','90000')
 print(emp_1.email)
 print(emp_2.email)
 
-# %% 
-print("PART_1: \n")
-
-print(emp_1.first,emp_2.first)
-Employee.fullname(emp_1)
-print(emp_1.fullname())
-
-# %%
-print("PART_2: \n")
-
-print(emp_1.pay)
-emp_1.apply_raise()
-print(emp_1.pay)
-
-# %%
-print("\n")
-
-print('emp_1.__dict__:',emp_1.__dict__)  # It gives us all of the attributes about emp_1.
-
-emp_1.raise_amount = 1.05
+Employee.set_raise_amt(1.05)  # Automatically take the class so we just need to give it the amount.
 
 print('\nEmployee.raise_amount: ',Employee.raise_amount,'\n')
-
 print('emp_1.raise_amount:',emp_1.raise_amount)
 print('emp_2.raise_amount:',emp_2.raise_amount)
-
-print('\nEmployee.num_of_emps',Employee.num_of_emp)
-
-
-# %% Begining of Staticmethods and classmethods. _Tutorial 3.
-# Differences between class methods and regular methods.
-# A lot of people get confused about it. 
-
-# Regular method automaticaly takes the instance as the argument.
-# How to convert regular method to class method.
 
 
 
