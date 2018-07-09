@@ -9,29 +9,29 @@ class Person:
 	author: Mahdi.
 	email: mahdi@uga.edu.
 	'''
-	count = 0;  # This is constant in all of the objects.
-	
+	thisCount = 0;  # This is constant in all of the objects.
+
 	def __init__(self, name):  
 		self.name = name
 		self.birth = datetime.now()
-		
+
 		print(str(name)+' is created on '+ str(self.birth),'.')
-		Person.count += 1 # count = count + 1 ==> Error. Age mikhay az moteghayeri too class estefade koni 
+		Person.thisCount += 1 # count = count + 1 ==> Error. Age mikhay az moteghayeri too class estefade koni 
 
 	def thisFunctionName(self, name):
 		print(name)  # Har tabe besoorate pishfarz None ro bar migardoone.
 
 if __name__ == '__main__':  # Module besurate dasti ejra shode.
 	obj1 = Person('Mahdi')
-	print('Person.count: ',Person.count)
+	print('Person.count: ',Person.thisCount)
 	obj2 = Person('Maryam')
-	print('Person.count: ',Person.count)
-	
+	print('Person.count: ',Person.thisCount)
 
 
-# Mahdi 2018-07-09 00:23:33.350050
-# Maryam 2018-07-09 00:23:33.350155
-        
+# -------------------- Naming the Class variables.
+
+# Copy funtions.
+# the first word small. the rest are big.
 # --------------------- Class Variable ---------------------------------
 # Moteghayeri ke makhsuse Class e ! va azun olgue sakhte mishe.
 
